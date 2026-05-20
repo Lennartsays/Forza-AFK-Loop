@@ -260,8 +260,8 @@ SaveSettings(*) {
         IniWrite(hkStartCtrl.Value, configPath, "Settings", "StartHotkey")
         IniWrite(hkStopCtrl.Value, configPath, "Settings", "StopHotkey")
         IniWrite(txtHoldKey.Text, configPath, "Settings", "HoldKey")
-        IniWrite(chkSounds.Value.ToString(), configPath, "Settings", "PlaySounds")
-        IniWrite(chkAutoReset.Value.ToString(), configPath, "Settings", "AutoRestart")
+        IniWrite(chkSounds.Value, configPath, "Settings", "PlaySounds")      ; <-- .ToString() entfernt!
+        IniWrite(chkAutoReset.Value, configPath, "Settings", "AutoRestart")  ; <-- .ToString() entfernt!
         
         global savedStartHK, savedStopHK
         try Hotkey(savedStartHK, "Off")
@@ -284,8 +284,8 @@ AutoSaveAndExit(*) {
         IniWrite(hkStartCtrl.Value, configPath, "Settings", "StartHotkey")
         IniWrite(hkStopCtrl.Value, configPath, "Settings", "StopHotkey")
         IniWrite(txtHoldKey.Text, configPath, "Settings", "HoldKey")
-        IniWrite(chkSounds.Value.ToString(), configPath, "Settings", "PlaySounds")
-        IniWrite(chkAutoReset.Value.ToString(), configPath, "Settings", "AutoRestart")
+        IniWrite(chkSounds.Value, configPath, "Settings", "PlaySounds")      ; <-- .ToString() entfernt!
+        IniWrite(chkAutoReset.Value, configPath, "Settings", "AutoRestart")  ; <-- .ToString() entfernt!
     }
     ExitApp()
 }
