@@ -48,8 +48,8 @@ global configPath := A_ScriptDir "\config.ini"
 
 ; --- STATISCHE MAP CODES ---
 global staticMaps := [
-    {Name: "1M+/h CR",      Code: "954 356 527"},
-    {Name: "Route 67",  Code: "155 491 518"},
+    {Name: "1M+/h CR",      Code: "954356527"},
+    {Name: "Route 67",  Code: "155491518"},
 ]
 
 ; =================================================================
